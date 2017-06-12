@@ -10,7 +10,6 @@ s = "hello world "
 # print s*2
 
 # print s+"rokcy"
-# print "**************"
 
 # 列表
 
@@ -20,6 +19,32 @@ list_b = ["var"]
 # print list_a[1:3]
 # print list_b*2
 # print list_a+list_b
+
+# 浅拷贝
+
+list_c=list_a
+# print list_c
+list_a[0]="strs"
+# print list_c
+
+# 表层拷贝
+list_d=list_a[:]
+list_a[0]="strs"
+# print list_d
+
+list_a[2][1]="d"
+# print list_d
+
+# 深拷贝
+
+import copy
+
+list_e=copy.deepcopy(a)
+
+list_a[0]="strs"
+list_a[2][1]="d"
+
+# print list_e
 
 
 # print len(list_a)
@@ -37,8 +62,6 @@ tuple_b = ("var",)
 # print tuple_b * 2
 # print tuple_a+tuple_b
 
-
-
 # 字典
 
 person_a = {
@@ -46,7 +69,7 @@ person_a = {
     "age": 24,
     1: "level_1"
 }
-# print  "************************"
+
 # print person_a["name"]
 # print person_a["age"]
 # print person_a[1]
@@ -56,6 +79,8 @@ person_a = {
 #
 # print person_a.keys()
 # print person_a.values()
+# print person_a.items()
+
 
 # 第一个参数是dict的key值 第二个是找不到这个key值所对应的输入值
 # print person_a.get(1,"failed")
@@ -63,7 +88,14 @@ person_a = {
 person_a["address"] = "China"
 person_a.pop("address")
 
-# print person_a.items()
+# for  key in count:
+#     print key,count[key]
+# for key,value in count.items():
+#     print key,value
+# for key,value in count.iteritems():
+#     print key,value
+# for key,value in zip(count.iterkeys(),count.itervalues()):
+#     print key,value
 
 
 # Set
@@ -105,6 +137,12 @@ set_a.add('lucky')
 
 
 # 函数
+
+# 无参数
+# 有参数
+# 不定长参数
+# 参数次序可变
+
 # def print_hello(s=3,*args):
 # def print_hello(s,args):
 #     print "hello"
@@ -113,11 +151,6 @@ set_a.add('lucky')
 #         print a
 #     return s*2
 
-
-# 无参数
-# 有参数
-# 不定长参数
-# 参数次序可变
 
 # print_hello(1,4)
 # print_hello(1)
@@ -153,8 +186,6 @@ set_a.add('lucky')
 #         self.__name=name
 #         self.__age=age
 #
-#
-#
 # class Man(Human):
 #     #初始化Human的构造函数
 #     def __init__(self,name,age,has_wife):
@@ -166,6 +197,7 @@ set_a.add('lucky')
 # 如果在不同的路径下要使用sys
 # import sys
 # sys.path.append('')
+
 
 # 调用包下的模块
 # 只要用sys.path.append('')加载这个包
@@ -189,11 +221,12 @@ set_a.add('lucky')
 # print str[::-1]
 
 # 文件
-# a 追加写
+# a 追加写 b 二进制用于图片
 # f=open("hello","arw+")
 # content=f.read()
 # f.close()
 # print content
+
 
 # 如果文件比内存大的话
 # while True:
@@ -202,15 +235,17 @@ set_a.add('lucky')
 #         break
 #     for line in lines:
 #         print line.strip()
-# f.close()
-# f.writelines(['abcdefg','123456789'])
+
 # f.close()
 
+# 0-100的总和
 
 # sum=0
 # for i in range(0,101):
 #     sum += i
 # print sum
+
+# 1-100的质数
 
 # for i in range(3,100):
 #     sum=0
@@ -233,6 +268,8 @@ set_a.add('lucky')
 #         print i
 
 
+# 文件单词计数
+
 # f=open("hello","arw+")
 # lines=f.readlines()
 # count={}
@@ -246,141 +283,9 @@ set_a.add('lucky')
 
 # for  key in count:
 #     print key,count[key]
-# for key,value in count.items():
-#     print key,value
-# for key,value in count.iteritems():
-#     print key,value
-# for key,value in zip(count.iterkeys(),count.itervalues()):
-#     print key,value
 # f.close()
 
 
-# 队列和戰
-
-
-
-# class Queue(object):
-# class Stack(object):
-#     def __init__(self):
-#         self.data_list=[]
-#
-#     def insert(self,data):
-#         self.data_list.append(data)
-#
-#     def pop(self):
-#         if len(self.data_list)==0:
-#             return None
-        # data=self.data_list[0]
-        # data=self.data_list[-1]
-        # del self.data_list[-1]
-        # del self.data_list[0]
-
-        # return data
-
-    # def size(self):
-    #     return len(self.data_list)
-
-# queue = Queue()
-# stack = Stack()
-# print stack.size()
-# stack.insert(1)
-# stack.insert(2)
-# stack.insert(3)
-# head = stack.pop()
-# print head
-# head = stack.pop()
-# print head
-# head = stack.pop()
-# print head
-# head = stack.pop()
-# print head
-
-
-class Node(object):
-    def __init__(self,index):
-        self.index=index
-        self.left_child=None
-        self.right_child=None
-
-class BinaryTree(object):
-    def __init__(self,root):
-        self.root=root
-
-    def pre_travel(self,node):
-        if not node:
-            return
-        print node.index
-        self.pre_travel(node.left_child)
-        self.pre_travel(node.right_child)
-
-    def cen_travel(self,node):
-        if not node:
-            return
-        self.cen_travel(node.left_child)
-        print node.index
-        self.cen_travel(node.right_child)
-    def next_travel(self,node):
-        if not node:
-            return
-        self.next_travel(node.left_child)
-        self.next_travel(node.right_child)
-        print node.index
-
-node_dict={}
-for i in range(1,12):
-    node_dict[i]=Node(i)
-node_dict[1].left_child = node_dict[2]
-node_dict[1].right_child = node_dict[3]
-node_dict[2].left_child = node_dict[5]
-node_dict[2].right_child = node_dict[6]
-node_dict[6].left_child = node_dict[10]
-node_dict[6].right_child = node_dict[11]
-node_dict[3].left_child = node_dict[7]
-node_dict[7].left_child = node_dict[8]
-node_dict[7].right_child = node_dict[9]
-
-
-tree=BinaryTree(node_dict[1])
-# tree.pre_travel(tree.root)
-# tree.cen_travel(tree.root)
-# tree.next_travel(tree.root)
-
-
-def binary_search(search_list,target):
-    left=0
-    right=len(search_list)-1
-    while left <= right:
-        mid=(right+left)/2
-        if search_list[mid] < target:
-            left = mid + 1
-            continue
-        if search_list[mid] == target:
-            return mid
-        if search_list[mid] > target:
-            right=mid-1
-    return None
-
-
-search_list=[1,4,7,8,9]
-# print binary_search(search_list,8)
-
-def insert_sort(origin_list):
-    sorted_list=[]
-    for i in range(0,len(origin_list)):
-        if len(sorted_list) ==0:
-            sorted_list.append(origin_list[i])
-            continue
-        for j in range(len(sorted_list)-1,-1,-1):
-            if sorted_list[j]<=origin_list[i]:
-                sorted_list.insert(j+1,origin_list[i])
-                break
-            if j==0:
-                sorted_list.insert(0,origin_list[i])
-    origin_list[:]=sorted_list[:]
-
-origin_list=[2,4,1,6,3]
-insert_sort(origin_list)
-print origin_list
 
 
 
