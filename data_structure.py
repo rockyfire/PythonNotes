@@ -147,8 +147,16 @@ origin_list=[5,4,2,1,9,6]
 bubble_sort(origin_list)
 # print origin_list
 
+def qucksort(a):
+    if len(a)<=1:
+        return a
+    l=[x for x in a[1:] if x <= a[0]]
+    r=[x for x in a[1:] if x >a[0]]
+    return qucksort(l)+[a[0]]+qucksort(r)
 
 
+a=[20,10,30,70,50]
+# print qucksort(a)
 
 
 
