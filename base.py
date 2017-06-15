@@ -39,7 +39,7 @@ list_a[2][1]="d"
 
 import copy
 
-list_e=copy.deepcopy(a)
+list_e=copy.deepcopy(list_a)
 
 list_a[0]="strs"
 list_a[2][1]="d"
@@ -96,6 +96,11 @@ person_a.pop("address")
 #     print key,value
 # for key,value in zip(count.iterkeys(),count.itervalues()):
 #     print key,value
+
+# s='abcdefghijk'
+# for (index,char) in enumerate(s):
+#     print index
+#     print char
 
 
 # Set
@@ -156,6 +161,9 @@ set_a.add('lucky')
 # print_hello(1)
 # print print_hello(2)
 
+# 匿名函数
+# func=lambda x,y :x+y
+# print func(1,2)
 
 # 类
 
