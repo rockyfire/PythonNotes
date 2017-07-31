@@ -8,6 +8,7 @@ Python笔记始于2017-06-11
 从零开始学爬虫 2017-07-30
 
 day01 通读了一下requests 和 Beautiful Soup 的 文档 
+
 day02 写一个爬虫的小demo (百度贴吧的前几页贴中的图片),了解反爬虫的知识(robots.txt)代理IP User-Agent
 
 
