@@ -7,6 +7,10 @@ from Scrapy.items import IthomeItem
 # class[0]
 # class[position()]
 
+# //img/@src 获取src的值
+# //img[@src]获取带有src属性的img
+
+
 # 1 scrapy startproject <project_name>
 
 # 2 scrapy genspider <demo_name> 待爬的网页
