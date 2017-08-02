@@ -13,6 +13,10 @@ day02 写一个爬虫的小demo (百度贴吧的前几页贴中的图片),了解
 
 day03 本来想使用squid和stunnel搭建一个代理服务器,忙了一天一点进展都没有.连最基本的安装squid后,通过SwitchyOmega/SwitchySharp连接到3128端口都不行,太失败了
 
+day04 Scrapy入门而已,掌握XPath的基本语法
+
+
+
 
 
 
