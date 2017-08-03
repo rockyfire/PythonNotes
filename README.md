@@ -15,6 +15,8 @@ day03 本来想使用squid和stunnel搭建一个代理服务器,忙了一天一�
 
 day04 Scrapy入门而已,掌握XPath的基本语法  [Xpath提取多个标签下的text](http://www.tuicool.com/articles/iqQFBn)
 
+day05 提取天气预报的关键信息练手Scrapy,大部分的时间在学json和python的结合.
+
 
 
 
