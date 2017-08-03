@@ -1,0 +1,96 @@
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "莆田今日天气",
+    "state": "多云",
+    "temperature": "33℃~26℃",
+    "weekday": "星期四",
+    "wind": "南风 3级"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "莆田明日天气",
+    "state": "多云",
+    "temperature": "34℃~27℃",
+    "weekday": "星期五",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "莆田后天天气",
+    "state": "多云",
+    "temperature": "35℃~27℃",
+    "weekday": "星期六",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "莆田06日天气",
+    "state": "多云",
+    "temperature": "35℃~27℃",
+    "weekday": "星期日",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b7.png",
+    "site": "莆田07日天气",
+    "state": "小雨",
+    "temperature": "34℃~27℃",
+    "weekday": "星期一",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b7.png",
+    "site": "莆田08日天气",
+    "state": "小雨",
+    "temperature": "34℃~27℃",
+    "weekday": "星期二",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b8.png",
+    "site": "广州今日天气",
+    "state": "中雨",
+    "temperature": "31℃~27℃",
+    "weekday": "星期四",
+    "wind": "南风 2级"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b8.png",
+    "site": "广州明日天气",
+    "state": "中雨",
+    "temperature": "32℃~27℃",
+    "weekday": "星期五",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b4.png",
+    "site": "广州后天天气",
+    "state": "雷阵雨",
+    "temperature": "34℃~28℃",
+    "weekday": "星期六",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "广州06日天气",
+    "state": "多云",
+    "temperature": "35℃~28℃",
+    "weekday": "星期日",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "广州07日天气",
+    "state": "多云",
+    "temperature": "36℃~28℃",
+    "weekday": "星期一",
+    "wind": "无持续风向 微风"
+}
+{
+    "img": "http://img.tianqi.com/static/images/tianqibig/b1.png",
+    "site": "广州08日天气",
+    "state": "多云",
+    "temperature": "36℃~28℃",
+    "weekday": "星期二",
+    "wind": "无持续风向 微风"
+}
