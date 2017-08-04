@@ -5,8 +5,9 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-import requests
 import json
+import MySQLdb
+
 
 
 class WeatherPipeline(object):
@@ -52,6 +53,43 @@ class WeatherPipeline(object):
             f.write(json.dumps(my_dict,indent=4,ensure_ascii=False,sort_keys=True)+'\n')
 
         return item
+
+
+class mysqlPipeline(object):
+    def process_item(self, item, spider):
+        site="".join(item['site'])
+        weekday="".join(item['weekday'])
+        temperature="".join(item['temperature'])
+        state="".join(item['state'])
+        wind="".join(item['wind'])
+        img="".join(item['img'])
+        connection=MySQLdb.connect(
+                    host="localhost",
+                    user="root",
+                    passwd="1575",
+                    db="candy", #数据库名字
+                    port=3306,
+                    charset="utf8",
+        )
+        # python3 字符串格式化问题
+        try:
+            with connection.cursor() as cursor:
+                sql="""insert into weather(dates,week,temperature,weather,wind,img)
+                        VALUES('{0}','{1}','{2}','{3}','{4}','{5}')""".format(site,weekday,temperature,state,wind,img)
+                cursor.execute(sql)
+            connection.commit()
+        finally:
+            connection.close()
+
+        return item
+
+
+class IPPipeline(object):
+    def process_item(self, item, spider):
+        with open("data/ip.txt",'a') as f:
+            f.write("".join(item['ip'])+":"+"".join(item['port'])+'\n')
+
+
 
 
 

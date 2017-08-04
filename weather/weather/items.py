@@ -22,3 +22,9 @@ class tianqiItem(scrapy.Item):
     state=scrapy.Field()
     wind=scrapy.Field()
 
+
+class proxyIPItem(scrapy.Item):
+    ip=scrapy.Field()
+    port=scrapy.Field()
+
+
