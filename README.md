@@ -17,6 +17,10 @@ day04 Scrapy入门而已,掌握XPath的基本语法  [Xpath提取多个标签�
 
 day05 提取天气预报的关键信息练手Scrapy,大部分的时间在学json和python的结合.
 
+day06 获取可用的IP代理,Scrapy获取的过程中遇到503错误,通过设置User-Agent或DOWNLOAD_DELAY = 3(延迟下载)来解决(docker新书已到)
+
+
+
 
 
 
