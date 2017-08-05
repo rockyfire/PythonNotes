@@ -19,7 +19,15 @@ day05 提取天气预报的关键信息练手Scrapy,大部分的时间在学json
 
 day06 获取可用的IP代理,Scrapy获取的过程中遇到503错误,通过设置User-Agent或DOWNLOAD_DELAY = 3(延迟下载)来解决(docker新书已到)
 
+day07 自定义下载器中间件,突破IP/User-Agent封锁
 
+其实在settings.py中设置DEFAULT_REQUEST_HEADERS后,修改
+```
+  class xxxSpider(scrapy.Spider):
+    def __init__(self): 
+        self.header=DEFAULT_REQUEST_HEADERS
+```
+也可以实现效果
 
 
 
