@@ -28,3 +28,7 @@ class proxyIPItem(scrapy.Item):
     port=scrapy.Field()
 
 
+class chanyoujiuItem(scrapy.Item):
+    img=scrapy.Field()
+
+

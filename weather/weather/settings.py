@@ -32,8 +32,24 @@ DOWNLOAD_DELAY = 3
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
 
+
+# Ctrl+Shift+J
+# document.cookie
+
+# raw_cookies=''
+#
+# cookies={}
+#
+# for line in raw_cookies.split(';'):
+#     key,value =line.split('=',1)
+#     cookies[key]=value
+
+
+
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = {
+#
+# }
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -42,7 +58,7 @@ DOWNLOAD_DELAY = 3
 DEFAULT_REQUEST_HEADERS = {
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'en',
-  'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+  'User-Agent' : 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
 }
 
 # Enable or disable spider middlewares
@@ -53,9 +69,13 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'weather.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   # 'weather.middlewares.MyCustomDownloaderMiddleware': 543,
+    'weather.middlewares.customUserAgent.customRandomProxy':10,
+    'weather.middlewares.customUserAgent.RandomUserAgent':10,
+    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 100,
+
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -68,7 +88,8 @@ DEFAULT_REQUEST_HEADERS = {
 ITEM_PIPELINES = {
    # 'weather.pipelines.WeatherPipeline': 300,
    # 'weather.pipelines.mysqlPipeline': 500,
-   'weather.pipelines.IPPipeline': 300,
+   # 'weather.pipelines.IPPipeline': 300,
+   'weather.pipelines.chanyouji': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

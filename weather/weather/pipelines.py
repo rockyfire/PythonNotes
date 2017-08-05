@@ -88,6 +88,11 @@ class IPPipeline(object):
     def process_item(self, item, spider):
         with open("data/ip.txt",'a') as f:
             f.write("".join(item['ip'])+":"+"".join(item['port'])+'\n')
+        return item
+
+class chanyouji(object):
+    def process_item(self, item, spider):
+        return item
 
 
 
