@@ -31,6 +31,13 @@ day07 自定义下载器中间件,突破IP/User-Agent封锁
 
 day08 爬山
 
+day09 学习selenium(看了一遍中文文档)和安装Phantomjs(sudo apt-get install Phantomjs 安装出现错误segmentation fault-- stack overflow上有人说使用apt安装是不完整的,遂使用npm安装) 拿学校的教务系练手(登陆正方教务系统)结果敗在自动填写上,密码的填写项不允许操作
+
+```selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated```
+
+
+
+
 
 
 
