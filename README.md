@@ -37,6 +37,14 @@ day09 学习selenium(看了一遍中文文档)和安装Phantomjs,拿学校的教
 selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
 ```
 
+day10 使用tesseract进行验证码的解析错误提示:
+
+```
+Error in pixReadStreamGif: Can't use giflib-5.1.2; suggest 5.1.1 or earlier
+```
+下载了低版本的,但是不会编译链接成os文件.昨天的selenium问题还在问另一个大佬.
+
+
 
 
 
