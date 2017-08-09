@@ -44,6 +44,13 @@ Error in pixReadStreamGif: Can't use giflib-5.1.2; suggest 5.1.1 or earlier
 ```
 下载了低版本的,但是不会编译链接成os文件.昨天的selenium问题还在问另一个大佬.
 
+day11 no zuo,no die .昨天想用python弄个html转pdf的小demo,参考[html转pdf](https://foofish.net/python-crawler-html2pdf.html)
+秉承杀鸡用牛刀的精神,使用Scrapy写一个,yield scrapy.Request(urls,callback=self.parse_body) 返回的html不是按html的列表顺序来的.无奈只能用写文件的操作把html按顺序排列,最后pdfkit的时候又出现
+```
+The switch --outline-depth, is not support using unpatched qt, and will be ignored.Error: This version of wkhtmltopdf is build against an unpatched version of QT, and does not support more then one input document.
+```
+
+最近几天的运气有点不好啊,issue有人说换个版本的wkhtmltopdf就可以了[换wkhtmltopdf版本](https://github.com/lzjun567/crawler_html2pdf/issues/12) --用命令行下载真是慢的一笔
 
 
 
