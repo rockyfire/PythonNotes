@@ -52,6 +52,15 @@ The switch --outline-depth, is not support using unpatched qt, and will be ignor
 
 最近几天的运气有点不好啊,issue有人说换个版本的wkhtmltopdf就可以了[换wkhtmltopdf版本](https://github.com/lzjun567/crawler_html2pdf/issues/12) --用命令行下载真是慢的一笔
 
+day12 解决了前天的无法填写的问题,问题的原因主要是因为一开始password的display设置为none,只有点击后才会改变display为inline-block(其实在password上面还有一个input,点击这个input后,填写的就是password).
+
+```
+driver.execute_script('document.getElementById("TextBox2").style="display: inline-block; visibility: visible;"')
+driver.execute_script('document.getElementById("TextBox2").contentEditable = true')
+```
+
+[参考资料](http://blog.csdn.net/windanchaos/article/details/55348061)
+
 
 
 
