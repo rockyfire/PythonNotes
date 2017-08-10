@@ -60,6 +60,7 @@ driver.execute_script('document.getElementById("TextBox2").contentEditable = tru
 ```
 
 [参考资料](http://blog.csdn.net/windanchaos/article/details/55348061)
+[display:none与visible:hidden的区别](http://www.cnblogs.com/nicholas_f/archive/2009/03/27/1423207.html)
 
 
 
