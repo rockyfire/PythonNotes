@@ -66,6 +66,10 @@ driver.execute_script('document.getElementById("TextBox2").contentEditable = tru
 
 [display:none与visible:hidden的区别](http://www.cnblogs.com/nicholas_f/archive/2009/03/27/1423207.html)
 
+day13 给自己放一天的假,搞搞ShadowSocks,服务器端搭建好了,客户端就Windows可以,Linux还是不行.就是访问的速度有点慢但是可以上Youtube看电影,给Linux换了个hosts,访问Google快多了
+
+
+
 
 
 
