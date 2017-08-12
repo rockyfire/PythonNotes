@@ -68,6 +68,8 @@ driver.execute_script('document.getElementById("TextBox2").contentEditable = tru
 
 day13 给自己放一天的假,搞搞ShadowSocks,服务器端搭建好了,客户端就Windows可以,Linux还是不行.就是访问的速度有点慢但是可以上Youtube看电影,给Linux换了个hosts,访问Google快多了
 
+day14 上午去城关学车,下午去同学的驾校再学.大中午就去开始学,差点中暑了.回来就开始想昨天的爬虫.
+
 
 
 
